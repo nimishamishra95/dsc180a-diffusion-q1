@@ -1,8 +1,8 @@
 # DSC 180A Q1 Project - Diffusion Models
 
-For my Q1 project for the Data Science capstone, I'm exploring diffusion models using the EDM framework from Karras et al. (2022). I'm mainly looking at how classifier-free guidance (CFG) affects image generation and how training with limited data might affect a model's ability to generalize.
+For my Q1 project for the Data Science capstone, I'm learning about diffusion models using the EDM framework from Karras et al. (2022). I'm mainly looking at how classifier-free guidance (CFG) affects image generation and how training with limited data might affect a model's ability to generalize.
 
-For now, I've been working with CIFAR-10 and MNIST. Most of my experiments so far have focused on generating images with pretrained EDM models and comparing how different guidance strengths affect the quality of the generated images.
+So far, I've been working with CIFAR-10 and MNIST and I've been experimenting with pretrained EDM models to see how different guidance strengths affect image generation. I've also trained some smaller EDM models on 100 and 1000 CIFAR-10 images to look at how limited training data affects the models.
 
 ## Repository Structure
 
@@ -34,7 +34,7 @@ I've been running the CIFAR-10 notebook on Google Colab with the T4 GPU, so that
 5. Go to **Runtime → Change runtime type** and select a T4 GPU or if you have some other GPU then you can select that.
 6. Run the notebook cells in order.
 
-The notebook handles most of the setup automatically, including downloading the datasets, pretrained models, and evaluation tools.
+The notebook handles most of the setup automatically including downloading the datasets, pretrained models, and evaluation tools.
 
 ### Running Locally
 
@@ -66,7 +66,7 @@ You can then start JupyterLab:
 jupyter lab
 ```
 
-The notebooks also use NVIDIA's EDM code, which has some additional dependencies. I've mainly tested the CIFAR-10 experiments in Colab, so I highly recommend you also use the Colab environment for reproducing the current results.
+The notebooks also use NVIDIA's EDM code, which has some additional dependencies. Take this setup with a grain of salt though because I've mainly tested the CIFAR-10 experiments in Colab. I highly recommend you also use the Colab environment for reproducing the current results.
 
 ## Data and Models
 
@@ -82,9 +82,9 @@ The notebook automatically downloads what it needs including:
 - An Inception model and reference statistics for calculating FID
 - The NVIDIA EDM source code
 
-These files are stored in the `downloads/` folder created by the notebook. The downloaded files are also checked using SHA-256 hashes to make sure they're correct.
+These files are stored in the `downloads/` folder created by the notebook. The downloaded files are also checked using SHA-256 hashes to make sure they're correct (also provided by the notebook).
 
-If the original CIFAR-10 Python archive is already downloaded, it can be placed at `downloads/cifar-10-python.tar.gz` instead.
+If the original CIFAR-10 Python archive is already downloaded, you can just place it at `downloads/cifar-10-python.tar.gz` instead.
 
 I didn't include the downloaded datasets or model weights in the repo since the notebook already handles downloading them.
 
@@ -98,17 +98,19 @@ It downloads the pretrained weights it needs and creates a helper module called 
 
 ### CIFAR-10
 
-To reproduce the CIFAR-10 experiments, open `notebooks/cifar10_edm_lab.ipynb` and run all the cells in order.
+To reproduce the CIFAR-10 experiments, open `notebooks/cifar10_edm_lab.ipynb` and run the cells in order through Part 6.
 
-The notebook has six parts as I mentioned above, starting with unconditional generation and class conditioning, followed by classifier-free guidance comparisons, evaluation using accuracy and FID, and training on smaller subsets of CIFAR-10.
+For Parts 1–4, just run the cells in order without changing anything.
 
-For Part 5, I tested guidance strengths of `0, 1, 1.5, 2, 3, 4`, generating 1,000 images for each setting. Make sure `QUICK = False` before running this part to use the full evaluation configuration.
+For Part 5, make sure `QUICK = False` to reproduce the full evaluation. The generated images and evaluation metrics are saved in the `outputs/` folder created by the notebook. I've also saved these files in the repository's `results/` folder, so if you want to reuse the generated samples instead of generating them again, just go ahead and copy the `.npz` files from `results/` into `outputs/` before running Part 5.
 
-The generated images and evaluation metrics are saved in the `outputs/` folder created by the notebook. I've also saved the completed Part 5 outputs in the repository's `results/` folder. To reuse the samples I generated without running the generation process again, copy the `.npz` files from `results/` into `outputs/` before running Part 5.
+For Part 6, just continue running the cells in order with `QUICK = False`. The notebook handles the training, evaluation, and generating the figures automatically by itself, so you just have to run the cells. Finally, the trained model checkpoints save to the `outputs/` folder. Just a quick note - training both models for 20000 updates takes around 2–3 hours on a Colab T4 GPU.
+
+Also, all of the tables and figures that are in the notebook will be reproduced if you just follow the steps above.
 
 ### MNIST
 
-To reproduce the MNIST experiments, just open the `notebooks/guidance_mnist.ipynb` and run the cells from the beginning. The notebook downloads the necessary pretrained weights during setup and then runs the guidance experiments.
+To reproduce the MNIST experiments, open `notebooks/guidance_mnist.ipynb` and run the cells from the beginning. The notebook already downloads the necessary pretrained weights during setup, so it's just a simple run.
 
 ## References
 
