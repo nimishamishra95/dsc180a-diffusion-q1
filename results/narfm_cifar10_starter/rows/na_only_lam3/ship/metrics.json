@@ -1,0 +1,9 @@
+{
+  "class_idx": 8,
+  "class_name": "ship",
+  "num_samples": 256,
+  "lambda": 3.0,
+  "accuracy": 77.34375,
+  "correct": 198,
+  "total": 256
+}

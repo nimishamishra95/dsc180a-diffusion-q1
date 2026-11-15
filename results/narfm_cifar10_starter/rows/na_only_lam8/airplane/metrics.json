@@ -1,0 +1,9 @@
+{
+  "class_idx": 0,
+  "class_name": "airplane",
+  "num_samples": 256,
+  "lambda": 8.0,
+  "accuracy": 96.484375,
+  "correct": 247,
+  "total": 256
+}

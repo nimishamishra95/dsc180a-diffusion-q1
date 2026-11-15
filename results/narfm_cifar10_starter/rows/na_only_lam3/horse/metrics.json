@@ -1,0 +1,9 @@
+{
+  "class_idx": 7,
+  "class_name": "horse",
+  "num_samples": 256,
+  "lambda": 3.0,
+  "accuracy": 63.671875,
+  "correct": 163,
+  "total": 256
+}

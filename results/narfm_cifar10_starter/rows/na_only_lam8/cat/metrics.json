@@ -1,0 +1,9 @@
+{
+  "class_idx": 3,
+  "class_name": "cat",
+  "num_samples": 256,
+  "lambda": 8.0,
+  "accuracy": 66.796875,
+  "correct": 171,
+  "total": 256
+}

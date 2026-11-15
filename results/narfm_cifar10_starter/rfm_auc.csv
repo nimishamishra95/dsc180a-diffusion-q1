@@ -1,0 +1,11 @@
+class,AUC (held-out)
+airplane,0.933
+automobile,0.969
+bird,0.882
+cat,0.852
+deer,0.895
+dog,0.891
+frog,0.953
+horse,0.894
+ship,0.951
+truck,0.946

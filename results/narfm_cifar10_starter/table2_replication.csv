@@ -1,0 +1,6 @@
+Row,"Acc % (ours, n=256)","Acc % (paper, n=256)",Acc % (paper Table 2),"FID (ours, n=256)","FID (paper Table 2, n=2048)","s/img (ours, T4, batch 64)","time (paper Table 2, A100, batch 16)"
+Unguided,10.0,-,-,157.8,-,0.531,-
+NA only (λ=3),62.0,-,62.0,91.0,99.0,0.316,5.8
+NA only (λ=8),79.8,-,80.0,111.0,120.0,0.318,5.8
+RFM only,96.1,94.3,94.8,95.3,40.3,0.637,6.8
+NA-RFM,96.0,97.9,96.6,93.4,41.4,0.544,6.2

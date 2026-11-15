@@ -1,0 +1,9 @@
+{
+  "class_idx": 6,
+  "class_name": "frog",
+  "num_samples": 256,
+  "lambda": 3.0,
+  "accuracy": 72.265625,
+  "correct": 185,
+  "total": 256
+}

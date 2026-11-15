@@ -1,0 +1,9 @@
+{
+  "class_idx": 1,
+  "class_name": "automobile",
+  "num_samples": 256,
+  "lambda": 8.0,
+  "accuracy": 70.3125,
+  "correct": 180,
+  "total": 256
+}

@@ -1,0 +1,9 @@
+{
+  "class_idx": 4,
+  "class_name": "deer",
+  "num_samples": 256,
+  "lambda": 8.0,
+  "accuracy": 83.984375,
+  "correct": 215,
+  "total": 256
+}

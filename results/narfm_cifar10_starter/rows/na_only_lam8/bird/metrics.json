@@ -1,0 +1,9 @@
+{
+  "class_idx": 2,
+  "class_name": "bird",
+  "num_samples": 256,
+  "lambda": 8.0,
+  "accuracy": 60.9375,
+  "correct": 156,
+  "total": 256
+}

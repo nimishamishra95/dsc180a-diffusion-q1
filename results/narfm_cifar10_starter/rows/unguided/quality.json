@@ -1,0 +1,128 @@
+{
+  "dataset": "cifar10",
+  "average_fid": 157.75961965980684,
+  "average_inception_score": 6.740984916687012,
+  "classes": [
+    {
+      "fid": 158.55687929277573,
+      "inception_score": 6.740984916687012,
+      "accuracy": 11.328125,
+      "correct": 29,
+      "total": 256,
+      "target": 0,
+      "name": "airplane",
+      "num_samples": 256,
+      "num_ref": 6000,
+      "samples": "/content/drive/MyDrive/narfm_replication/rows/unguided/airplane/samples.pt"
+    },
+    {
+      "fid": 172.00479387724846,
+      "inception_score": 6.740984916687012,
+      "accuracy": 6.25,
+      "correct": 16,
+      "total": 256,
+      "target": 1,
+      "name": "automobile",
+      "num_samples": 256,
+      "num_ref": 6000,
+      "samples": "/content/drive/MyDrive/narfm_replication/rows/unguided/automobile/samples.pt"
+    },
+    {
+      "fid": 144.14149614447086,
+      "inception_score": 6.740984916687012,
+      "accuracy": 6.640625,
+      "correct": 17,
+      "total": 256,
+      "target": 2,
+      "name": "bird",
+      "num_samples": 256,
+      "num_ref": 6000,
+      "samples": "/content/drive/MyDrive/narfm_replication/rows/unguided/bird/samples.pt"
+    },
+    {
+      "fid": 143.65599147423188,
+      "inception_score": 6.740984916687012,
+      "accuracy": 17.578125,
+      "correct": 45,
+      "total": 256,
+      "target": 3,
+      "name": "cat",
+      "num_samples": 256,
+      "num_ref": 6000,
+      "samples": "/content/drive/MyDrive/narfm_replication/rows/unguided/cat/samples.pt"
+    },
+    {
+      "fid": 138.6260345968727,
+      "inception_score": 6.740984916687012,
+      "accuracy": 9.375,
+      "correct": 24,
+      "total": 256,
+      "target": 4,
+      "name": "deer",
+      "num_samples": 256,
+      "num_ref": 6000,
+      "samples": "/content/drive/MyDrive/narfm_replication/rows/unguided/deer/samples.pt"
+    },
+    {
+      "fid": 153.0977496704798,
+      "inception_score": 6.740984916687012,
+      "accuracy": 11.71875,
+      "correct": 30,
+      "total": 256,
+      "target": 5,
+      "name": "dog",
+      "num_samples": 256,
+      "num_ref": 6000,
+      "samples": "/content/drive/MyDrive/narfm_replication/rows/unguided/dog/samples.pt"
+    },
+    {
+      "fid": 169.43359747337064,
+      "inception_score": 6.740984916687012,
+      "accuracy": 12.5,
+      "correct": 32,
+      "total": 256,
+      "target": 6,
+      "name": "frog",
+      "num_samples": 256,
+      "num_ref": 6000,
+      "samples": "/content/drive/MyDrive/narfm_replication/rows/unguided/frog/samples.pt"
+    },
+    {
+      "fid": 157.63442314372077,
+      "inception_score": 6.740984916687012,
+      "accuracy": 6.640625,
+      "correct": 17,
+      "total": 256,
+      "target": 7,
+      "name": "horse",
+      "num_samples": 256,
+      "num_ref": 6000,
+      "samples": "/content/drive/MyDrive/narfm_replication/rows/unguided/horse/samples.pt"
+    },
+    {
+      "fid": 171.71583114212413,
+      "inception_score": 6.740984916687012,
+      "accuracy": 10.546875,
+      "correct": 27,
+      "total": 256,
+      "target": 8,
+      "name": "ship",
+      "num_samples": 256,
+      "num_ref": 6000,
+      "samples": "/content/drive/MyDrive/narfm_replication/rows/unguided/ship/samples.pt"
+    },
+    {
+      "fid": 168.72939978277344,
+      "inception_score": 6.740984916687012,
+      "accuracy": 7.421875,
+      "correct": 19,
+      "total": 256,
+      "target": 9,
+      "name": "truck",
+      "num_samples": 256,
+      "num_ref": 6000,
+      "samples": "/content/drive/MyDrive/narfm_replication/rows/unguided/truck/samples.pt"
+    }
+  ],
+  "average_accuracy": 10.0
+}

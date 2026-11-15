@@ -1,0 +1,9 @@
+{
+  "class_idx": 5,
+  "class_name": "dog",
+  "num_samples": 256,
+  "lambda": 8.0,
+  "accuracy": 77.34375,
+  "correct": 198,
+  "total": 256
+}
